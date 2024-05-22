@@ -1,0 +1,18 @@
+.centrado {
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  
+.color{
+  background-color: rgb(255, 255, 255);
+}
+
+.or{
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}

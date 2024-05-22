@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formu</title>
+  <link rel="stylesheet" href="bootstrap/css/style.css">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="bootstrap/css/sweetalert2.min.css">
+  
+  <h1 class="centrado">Cliente</h1>
+
+</head>
+
+
+
+
+
+<body>
+  <section>
+    <form class="formulario">
+      <form class="orden">
+
+
+        <form action="col">
+          <form action="">
+            <div class="conta px-4 px-lg-5 princi">
+              <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-lg-8 col-xl-6 text-center">
+
+                </div><br>
+                <div class="dato justify-content-center">
+                  <div class="row p-1 gx-4 gx-lg-5 md-3">
+                    <div class="col-sm-2 p-0 text-center">
+                      <b><label for="cliente" class="form-control-label">Nombre:</label></b>
+                    </div>
+                    <div class="col-sm-3 p-0">
+                      <input type="text" class=" form-control form-control-sm" id="cliente" name="cliente" required>
+                      <div class="invalid-feedback">
+                          Por favor Ingrese Su Nombre!!
+                        </div>
+                    </div>
+                    <div class="col-sm-2 p-0 text-center">
+                      <b><label for="fecha_prestamo" class="form-control-label">Fecha de prestamo:</label></b>
+                    </div>
+                    <div class="col-sm-2 p-0">
+                      <input type="date" class=" form-control form-control-sm" id="fecha_prestamo"
+                        name="clientefecha_prestamo" required>
+                          <div class="invalid-feedback">
+                              Por favor Ingrese Su Fecha de Prestamo!!
+                            </div>
+                    </div>
+                    <div class="col-sm-1 p-0 text-center">
+                      <b><label for="interescli" class="form-control-label">Interes:</label></b>
+                    </div>
+                    <div class="col-sm-1 p-0 ">
+                      <input type="text" class=" form-control form-control-sm" id="interescli" name="clienteinterescli" required>
+                    </div>
+                  </div>
+                </div><br>
+                <div class="dato justify-content-center">
+                  <div class="row p-1 gx-4 gx-lg-5 md-3">
+                    <div class="col-sm-2 p-0 text-center">
+                      <b><label for="cuopendiente" class="form-control-label">Cuota Pendientes:</label></b>
+                    </div>
+                    <div class="col-sm-1 p-0">
+                      <input type="text" class=" form-control form-control-sm" id="cuopendiente"
+                        name="clientecuota_pendiente" readonly required>
+                        <div class="invalid-feedback">
+                            Por favor Ingrese Su Cuota Pendiente!!
+                          </div>
+                    </div>
+                    <div class="col-sm-2 p-0 text-center">
+                      <b><label for="valor_prestamo" class="form-control-label">Valor Prestamo:</label></b>
+                    </div>
+                    <div class="col-sm-2 p-0">
+                      <input type="text" class=" form-control form-control-sm" id="valor_prestamocli"
+                        name="clientevalor_prestamo" required>
+                        <div class="invalid-feedback">
+                            Por favor Ingrese Su Valor Prestamo!!
+                          </div>
+      
+                    </div>
+                    <div class="col-sm-2 p-0 text-center">
+                      <b><label for="total_pagar" class="form-control-label">Total a Pagar:</label></b>
+                    </div>
+                    <div class="col-sm-2 p-0 ">
+                      <input type="text" class=" form-control form-control-sm" id="total_pagar"
+                        name="clientetotal_pagar" readonly>
+                    </div>
+                  </div>
+                </div>
+
+          </form>
+
+  </section>
+
+  <!-- Button trigger modal -->
+  <form class="or">
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalPago">Pagar</button>
+  </form>
+  </form>
+  <!-- Modal -->
+  <div class="modal fade" id="modalPago" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Relizar Pago</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body">
+          <div class=" input mb-3">
+            <samp class="input-text">$</samp>
+            <samp class="input-text">Valor Prestamo</samp>
+            <input type="text" class=" form-control" id="valor_prestam"  aria-details="">
+          </div>
+
+
+        <div class="modal-body">
+          <div class=" input mb-3">
+            <samp class="input-text">%</samp>
+            <samp class="input-text">Intéres</samp>
+            <input type="text" class=" form-control" id="interes">
+          </div>
+
+          <div class=" input mb-3">
+            <samp class="input-text">$</samp>
+            <samp class="input-text"> Valor Pagado</samp>
+            <input type="text" class=" form-control" id="valor_pagado">
+          </div>
+
+          <div class=" input mb-3">
+            <samp class="input-text">$</samp>
+            <samp class="input-text"> Cuota</samp>
+            <input type="text" class=" form-control" id="cuota">
+          </div>
+          <div class=" input mb-3">
+            <samp class="input-text">$</samp>
+            <samp class="input-text"> Pago Capital</samp>
+            <input type="text" class=" form-control" id="pago_capital">
+          </div>
+
+          <div class=" input mb-3">
+            <samp class="input-text">%</samp>
+            <samp class="input-text"> Valor Interes</samp>
+            <input type="text" class=" form-control" id="valor_interes">
+          </div>
+
+          <div class=" input mb-3">
+            <samp class="input-text">$</samp>
+            <samp class="input-text">Valor Actual Del Prestamo</samp>
+            <input type="text" class=" form-control" id="valor_actual_prestamo">
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+            <button type="button" class="btn btn-primary" id="guardar">Guardar Cambios </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"></script> -->
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="bootstrap/js/jquery-3.7.1.min.js"></script>
+    <script src="bootstrap/js/sweetalert2.all.min.js"></script>
+    <script src="bootstrap/js/pago.js"></script>
+
+    <!-- <script src="formu.js"></script> -->
+</body>
+
+</html>
